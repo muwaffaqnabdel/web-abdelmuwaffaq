@@ -1,88 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WEBSITE TANAMAN TOKO JAYA</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>Website Toko Kopi Majapahit</title>
+    <link rel="stylesheet" href="style.css">
     <style>
         .header {
-            background-color: rgb(200, 112, 23);
-            display: flex;
-            color: aliceblue;
-            justify-content: space-between;
-        }
-
-        .content img {
-            width: 50%;
-            border-radius: 20px;
-        }
-
-        table {
-            margin: 20px auto;
-            border: 2px solid black;
-            width: 400px;
-            height: 100px;
-        }
-
-        thead {
-            background-color:  rgb(200, 112, 23);
-        }
-
-        thead td, tbody td {
             text-align: center;
-        }
-
-        form {
-            text-align: center;
-            margin-top: 20px;
-        }
-
-        form input, form textarea {
-            margin-bottom: 10px;
-        }
-
-        .Footer {
-            background-color: #333;
-            color: white;
             padding: 10px;
-            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 10;
         }
-
-        .Footer ul {
-            list-style-type: upper-roman;
-            padding: 0;
-        }
-
-        .Footer li {
-            margin-bottom: 10px;
-        }
-
-        .Footer a {
-            color: white;
-            text-decoration: none;
-        }
-
     </style>
 </head>
-
 <body>
-
     <div class="header">
-        <h1 align="center">KOPI MAJAPAHIT</h1>
+        <img src="logo kopi 2.png" alt="Logo Toko" class="logo">
+        <h2>KOPI MAJAPAHIT</h2>
         <nav>
-            <ul type="a">
-                <li><a href=""><h3>Home</h3></a></li>
-                <li><a href=""><h3>About</h3></a></li>
-                <li><a href=""><h3>Contact</h3></a></li>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html" target="_blank">About</a></li>
+                <li><a href="contact.html" target="_blank">Contact</a></li>
             </ul>
         </nav>
     </div>
 
     <div class="content">
-        <h4 align="center"><b>Layanan Kami</b></h4>
-        <table border="3">
+        <!-- Section untuk deskripsi dan gambar di sampingnya -->
+        <div class="intro-section">
+            <img src="Desain tanpa judul (5).png" alt="Foto Toko Kopi Majapahit">
+            <div class="intro-text">
+                <p>Selamat datang di Kopi Majapahit! Kami adalah tempat terbaik untuk menikmati berbagai jenis kopi berkualitas tinggi yang disajikan dengan penuh cinta. Temukan beragam layanan dan produk kami yang disukai oleh semua kalangan.</p>
+            </div>
+        </div>
+
+        <h4>Layanan Kami</h4>
+        
+        <table>
             <thead>
                 <tr>
                     <td>Jenis Layanan</td>
@@ -100,47 +57,32 @@
                 </tr>
             </tbody>
         </table>
-        <div class="container">
-            <img src="smooth1.jpg" alt="Produk Kopi" width="100" height="400">
-            <p><b>Kopi pasukan kerajaan, yang banyak dinikmati oleh kelas bangsawan</b></p>
 
-            <img src="foto produk.jpg" alt="Foto Produk" width="200" height="500">
-            <p><b>Menu kopi terbaru, Kopi Permaisuri.</b></p>
-            <style>
-                .container{
-                    display: flex;
-                }
-                .card{
-                    box-shadow: 20px 24px 15px -3px rgba(0,0,0,0.1);
-                    padding: 40px;
-                }
-                .card img{
-                    width: 100%;
-                    border-radius: 20px;
-                }
-                .container{
-                    margin: 5%;
-                }
-            </style>
+        <div class="image-container-wrapper">
+            <div class="image-container">
+                <img src="smooth1.jpg" alt="Produk Kopi">
+                <p class="image-description">Kopi pasukan kerajaan, yang banyak dinikmati oleh kelas bangsawan</p>
+            </div>
+            <div class="image-container">
+                <img src="foto produk.jpg" alt="Foto Produk">
+                <p class="image-description">Menu kopi terbaru, Kopi Permaisuri.</p>
+            </div>
+            <div class="image-container">
+                <img src="produk5.jpg" alt="Foto Produk">
+                <p class="image-description">Menu kopi terlaris, kopi Paduka.</p>
+            </div>
         </div>
-
-        <form action="">
-            <p><input type="text" placeholder="Isi Nama"></p>
-            <p><input type="email" placeholder="Isi Email"></p>
-            <p><textarea cols="20" rows="10">Isi Kritik dan Saran</textarea></p>
-            <button type="submit">Submit</button>
-            <button type="reset">Reset</button>
-        </form>
     </div>
 
-    <div class="Footer">
-        <ul>
-            <li><i>Informasi Kontak Toko</i></li>
-            <li><a href="https://mail.google.com/mail/u/0/#inbox?compose=new"><i>E-mail Toko Tanaman Jaya</i></a></li>
-            <li><a href="https://www.instagram.com/abdellmuwaffaq_/"><i>Follow Instagram Owner</i></a></li>
-        </ul>
+    <div class="footer">
+        <section id="a">
+            <ul>
+                <li>Informasi Kontak Toko</li>
+                <li>E-mail Toko : abdellmuwaffaq@gmail.com</li>
+                <a>Follow Instagram Toko Kopi MAJAPAHIT</a>
+            </ul>
+        </section>
     </div>
-
+    <script src="dom.js"></script>
 </body>
-
 </html>
